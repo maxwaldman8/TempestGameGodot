@@ -3,15 +3,13 @@ extends Node
 @export_multiline
 var _dialogue: String
 
-var dialogue: PackedStringArray
+var dialogue: PackedStringArray:
+	get: return _dialogue.split("\n\n")
 
 var index = 0
 
-func _ready():
-	dialogue = _dialogue.split("\n\n")
-
 func _process(_delta):
-	if index >= dialogue.size():
+	if index >= dialogue.size() or _dialogue == "":
 		find_child("DialogueBox").visible = false
 		find_child("DialogueContinue").visible = false
 		return
