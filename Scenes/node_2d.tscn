@@ -172,9 +172,9 @@ _dialogue = "[color=yellow]Miranda[/color]: If by your art, my dearest father, y
 
 [color=red]Prospero[/color]: The hour’s now come. The very minute bids thee ope thine ear. Obey, and be attentive. Canst thou remember a time before we came unto this cell? I do not think thou canst, for then thou wast not out three years old.
 
-[color=yellow]Miranda[/color]:  Certainly, sir, I can.
+[color=yellow]Miranda[/color]: Certainly, sir, I can.
 
-[color=red]Prospero[/color]:  By what? By any other house or person? Of anything the image tell me that hath kept with thy remembrance.
+[color=red]Prospero[/color]: By what? By any other house or person? Of anything the image tell me that hath kept with thy remembrance.
 
 [color=yellow]Miranda[/color]: ’Tis far off and rather like a dream than an assurance that my remembrance warrants. Had I not four or five women once that tended me?
 
@@ -196,7 +196,9 @@ _dialogue = "[color=yellow]Miranda[/color]: If by your art, my dearest father, y
 
 [color=red]Prospero[/color]: My brother and thy uncle, called Antonio—I pray thee, mark me—that a brother should be so perfidious!—he whom next thyself of all the world I loved, and to him put the manage of my state, as at that time through all the signories it was the first, and Prospero the prime duke, being so reputed in dignity, and for the liberal arts without a parallel. Those being all my study, the government I cast upon my brother and to my state grew stranger, being transported and rapt in secret studies. Thy false uncle—Dost thou attend me?
 
-[color=yellow]Miranda[/color]: Sir, most heedfully."
+[color=yellow]Miranda[/color]: Sir, most heedfully.
+
+"
 
 [node name="Sprite2D" type="Sprite2D" parent="Miranda"]
 
