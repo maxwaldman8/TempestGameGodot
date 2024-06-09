@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://drepu6f537qeh"]
+[gd_scene load_steps=13 format=3 uid="uid://drepu6f537qeh"]
 
 [ext_resource type="Script" path="res://Scripts/TextAnim.gd" id="1_47s31"]
 [ext_resource type="Script" path="res://Scripts/DialogueController.gd" id="1_jgwms"]
@@ -6,7 +6,8 @@
 [ext_resource type="Script" path="res://Scripts/MovementController.gd" id="2_j0flc"]
 [ext_resource type="Texture2D" uid="uid://bv7vhraqbi7wq" path="res://Sprites/Miranda.png" id="3_26ncg"]
 [ext_resource type="Texture2D" uid="uid://cibervmmlap30" path="res://Sprites/Backgrounds/Cell.png" id="6_gux55"]
-[ext_resource type="Script" path="res://Scripts/DialogueCharacter.gd" id="7_dq2vt"]
+[ext_resource type="Script" path="res://Scripts/DialogueMiranda1.gd" id="7_6b45s"]
+[ext_resource type="Texture2D" uid="uid://762y0jiprn4c" path="res://Sprites/DialogueIndicator.png" id="8_6tbnt"]
 
 [sub_resource type="Theme" id="Theme_437kb"]
 default_font_size = 11
@@ -94,7 +95,6 @@ script = SubResource("GDScript_v6apb")
 position = Vector2(196, 20)
 motion_mode = 1
 script = ExtResource("2_j0flc")
-speed = 100.0
 
 [node name="Sprite2D" type="Sprite2D" parent="Prospero"]
 texture = ExtResource("1_yys2b")
@@ -146,7 +146,7 @@ polygon = PackedVector2Array(-77.2, -9.476, 17.48, -9.476, 26.12, -19.2893, 28.6
 z_index = -1
 position = Vector2(-299, 77)
 texture = ExtResource("3_26ncg")
-script = ExtResource("7_dq2vt")
+script = ExtResource("7_6b45s")
 distance = 50.0
 _dialogue = "[color=yellow]Miranda[/color]: If by your art, my dearest father, you have put the wild waters in this roar, allay them. The sky, it seems, would pour down stinking pitch, but that the sea, mounting to th' welkin's cheek, dashes the fire out. O, I have suffered with those that I saw suffer! A brave vessel, who had, no doubt, some noble creature in her, dashed all to pieces. O, the cry did knock against my very heart! Poor souls, they perished. 
 
@@ -158,8 +158,48 @@ _dialogue = "[color=yellow]Miranda[/color]: If by your art, my dearest father, y
 
 [color=red]Prospero[/color]: No harm. I have done nothing but in care of thee, of thee, my dear one, thee, my daughter, who art ignorant of what thou art, naught knowing of whence I am, nor that I am more better than Prospero, master of a full poor cell, and thy no greater father. 
 
- [color=yellow]Miranda[/color]: More to know did never meddle with my thoughts. 
+[color=yellow]Miranda[/color]: More to know did never meddle with my thoughts. 
 
-[color=red]Prospero[/color]: 'Tis time I should inform thee farther. Lend thy hand and pluck my magic garment from me. "
+[color=red]Prospero[/color]: 'Tis time I should inform thee farther. Lend thy hand and pluck my magic garment from me. 
+
+
+
+[color=red]Prospero[/color]: So, lie there, my art.--Wipe thou thine eyes. Have comfort. The direful spectacle of the wrack, which touched the very virtue of compassion in thee, I have with such provision in mine art so safely ordered that there is no soul--no, not so much perdition as an hair, betid to any creature in the vessel which thou heards't cry, which thou saw'st sink. Sit down, for thou must now know farther. 
+
+
+
+[color=yellow]Miranda[/color]: You have often begun to tell me what I am, but stopped and left me to a bootless inquisition, concluding “Stay. Not yet.”
+
+[color=red]Prospero[/color]: The hour’s now come. The very minute bids thee ope thine ear. Obey, and be attentive. Canst thou remember a time before we came unto this cell? I do not think thou canst, for then thou wast not out three years old.
+
+[color=yellow]Miranda[/color]:  Certainly, sir, I can.
+
+[color=red]Prospero[/color]:  By what? By any other house or person? Of anything the image tell me that hath kept with thy remembrance.
+
+[color=yellow]Miranda[/color]: ’Tis far off and rather like a dream than an assurance that my remembrance warrants. Had I not four or five women once that tended me?
+
+[color=red]Prospero[/color]: Thou hadst, and more, Miranda. But how is it that this lives in thy mind? What seest thou else in the dark backward and abysm of time? If thou rememb’rest aught ere thou cam’st here, how thou cam’st here thou mayst.
+
+[color=yellow]Miranda[/color]: But that I do not.
+
+[color=red]Prospero[/color]: Twelve year since, Miranda, twelve year since, thy father was the Duke of Milan and a prince of power.
+
+[color=yellow]Miranda[/color]: Sir, are not you my father?
+
+[color=red]Prospero[/color]: Thy mother was a piece of virtue, and she said thou wast my daughter. And thy father was Duke of Milan, and his only heir and princess no worse issued.
+
+[color=yellow]Miranda[/color]: O, the heavens! What foul play had we that we came from thence? Or blessèd was ’t we did?
+
+[color=red]Prospero[/color]: Both, both, my girl. By foul play, as thou sayst, were we heaved thence, but blessedly holp hither.
+
+[color=yellow]Miranda[/color]: O, my heart bleeds to think o’ th’ teen that I have turned you to, which is from my remembrance. Please you, farther.
+
+[color=red]Prospero[/color]: My brother and thy uncle, called Antonio—I pray thee, mark me—that a brother should be so perfidious!—he whom next thyself of all the world I loved, and to him put the manage of my state, as at that time through all the signories it was the first, and Prospero the prime duke, being so reputed in dignity, and for the liberal arts without a parallel. Those being all my study, the government I cast upon my brother and to my state grew stranger, being transported and rapt in secret studies. Thy false uncle—Dost thou attend me?
+
+[color=yellow]Miranda[/color]: Sir, most heedfully."
 
 [node name="Sprite2D" type="Sprite2D" parent="Miranda"]
+
+[node name="DialogueIndicator" type="Sprite2D" parent="Miranda"]
+position = Vector2(5, -55)
+texture = ExtResource("8_6tbnt")

@@ -9,7 +9,7 @@ var dialogue: PackedStringArray:
 var index = 0
 
 func _process(_delta):
-	if index >= dialogue.size() or _dialogue == "":
+	if index >= dialogue.size() or dialogue[index] == "":
 		find_child("DialogueBox").visible = false
 		find_child("DialogueContinue").visible = false
 		return
@@ -22,6 +22,7 @@ func _input(event):
 		continue_animation()
 
 func continue_animation():
+	if find_child("DialogueBox").visible == false: return
 	index += 1
 	if index >= dialogue.size(): return
 	find_child("Dialogue", true).reset_animation()
