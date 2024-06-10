@@ -39,10 +39,10 @@ func _process(delta):
 			find_child("DialogueIndicator").visible = true
 			
 		if get_parent().find_child("GUI").find_child("Dialogue").index == 8 and cloak:
-			get_parent().find_child("GUI").find_child("Dialogue").index == 7
+			get_parent().find_child("GUI").find_child("Dialogue").index = 7
 			
 		if get_parent().find_child("GUI").find_child("Dialogue").index == 10 and not sitting:
-			get_parent().find_child("GUI").find_child("Dialogue").index == 9
+			get_parent().find_child("GUI").find_child("Dialogue").index = 9
 			
 		if abs(get_parent().find_child("Prospero").position.distance_to(position)) <= distance:
 			find_child("DialogueIndicator").visible = false

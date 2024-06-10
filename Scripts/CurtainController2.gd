@@ -13,7 +13,7 @@ func _ready():
 func drop():
 	dropping = true
 	play("drop")
-
+	
 func _input(event):
 	if dropped and event.is_action_pressed("next") and get_parent().find_child("GUI").find_child("Dialogue").index == 2:
 		get_tree().change_scene_to_file("res://Scenes/Part2.tscn")
